@@ -1,0 +1,24 @@
+PODS:
+  - Alamofire (5.6.2)
+  - BubbleTabBar (0.9.0)
+  - Kingfisher (7.3.2)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.6)
+  - BubbleTabBar (~> 0.9)
+  - Kingfisher (~> 7.3)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - BubbleTabBar
+    - Kingfisher
+
+SPEC CHECKSUMS:
+  Alamofire: d368e1ff8a298e6dde360e35a3e68e6c610e7204
+  BubbleTabBar: 9b63c3394182b9d866c54b11bcc887da98611fb8
+  Kingfisher: 0086ad83719761ba9b2cdaf6ef4d5b4878cbae23
+
+PODFILE CHECKSUM: 4715fd04c5299db50e8a7a62549ed0fce8d13270
+
+COCOAPODS: 1.11.3

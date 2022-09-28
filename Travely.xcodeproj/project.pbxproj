@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3047B90E9DAA621475D069DA /* Pods_Travely.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DD4F1BEDC3EAD8C5B0FF19F /* Pods_Travely.framework */; };
 		6419745528E3508600F7B411 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6419745428E3508600F7B411 /* AppDelegate.swift */; };
 		6419745728E3508600F7B411 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6419745628E3508600F7B411 /* SceneDelegate.swift */; };
 		6419745928E3508600F7B411 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6419745828E3508600F7B411 /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		06029EBAEBF2E003DC0947B1 /* Pods-Travely.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Travely.debug.xcconfig"; path = "Target Support Files/Pods-Travely/Pods-Travely.debug.xcconfig"; sourceTree = "<group>"; };
 		6419745128E3508600F7B411 /* Travely.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Travely.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6419745428E3508600F7B411 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6419745628E3508600F7B411 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +28,8 @@
 		6419746028E3508700F7B411 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6419746328E3508700F7B411 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6419746528E3508700F7B411 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89A46F1C34929B18E4152EF3 /* Pods-Travely.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Travely.release.xcconfig"; path = "Target Support Files/Pods-Travely/Pods-Travely.release.xcconfig"; sourceTree = "<group>"; };
+		8DD4F1BEDC3EAD8C5B0FF19F /* Pods_Travely.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Travely.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3047B90E9DAA621475D069DA /* Pods_Travely.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +49,8 @@
 			children = (
 				6419745328E3508600F7B411 /* Travely */,
 				6419745228E3508600F7B411 /* Products */,
+				D404BE03D11271F29A7A31B7 /* Pods */,
+				E8DA1EFCEA57AFA6B12F445E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +77,23 @@
 			path = Travely;
 			sourceTree = "<group>";
 		};
+		D404BE03D11271F29A7A31B7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				06029EBAEBF2E003DC0947B1 /* Pods-Travely.debug.xcconfig */,
+				89A46F1C34929B18E4152EF3 /* Pods-Travely.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E8DA1EFCEA57AFA6B12F445E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8DD4F1BEDC3EAD8C5B0FF19F /* Pods_Travely.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6419746828E3508700F7B411 /* Build configuration list for PBXNativeTarget "Travely" */;
 			buildPhases = (
+				9530AA3A66E968756E8584B3 /* [CP] Check Pods Manifest.lock */,
 				6419744D28E3508600F7B411 /* Sources */,
 				6419744E28E3508600F7B411 /* Frameworks */,
 				6419744F28E3508600F7B411 /* Resources */,
+				1A2D9DF065D3DE98D44F58B3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -114,6 +140,8 @@
 				Base,
 			);
 			mainGroup = 6419744828E3508600F7B411;
+			packageReferences = (
+			);
 			productRefGroup = 6419745228E3508600F7B411 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -135,6 +163,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1A2D9DF065D3DE98D44F58B3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Travely/Pods-Travely-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Travely/Pods-Travely-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Travely/Pods-Travely-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9530AA3A66E968756E8584B3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Travely-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6419744D28E3508600F7B411 /* Sources */ = {
@@ -286,6 +356,7 @@
 		};
 		6419746928E3508700F7B411 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06029EBAEBF2E003DC0947B1 /* Pods-Travely.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -314,6 +385,7 @@
 		};
 		6419746A28E3508700F7B411 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89A46F1C34929B18E4152EF3 /* Pods-Travely.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
