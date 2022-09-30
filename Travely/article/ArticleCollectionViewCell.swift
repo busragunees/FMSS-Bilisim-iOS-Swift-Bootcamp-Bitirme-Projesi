@@ -9,4 +9,8 @@ import UIKit
 
 class ArticleCollectionViewCell: UICollectionViewCell {
     
+    @IBOutlet weak var articleCellImage: UIImageView!
+    @IBOutlet weak var articleCellTitle: UILabel!
+    @IBOutlet weak var articleCellDesc: UILabel!
+    
 }
