@@ -10,8 +10,11 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="SourceSansPro-Regular.ttf">
-            <string>SourceSansPro-Regular</string>
+        <array key="SourceSansPro-Bold.ttf">
+            <string>SourceSansPro-Bold</string>
+        </array>
+        <array key="SourceSansPro-SemiBold.ttf">
+            <string>SourceSansPro-SemiBold</string>
         </array>
     </customFonts>
     <scenes>
@@ -66,12 +69,56 @@
                                 <rect key="frame" x="0.0" y="0.0" width="390" height="434"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VfH-Yj-mtA">
+                                <rect key="frame" x="101" y="334" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="whiteHotelIcon" translatesAutoresizingMaskIntoConstraints="NO" id="CUf-EA-Xb0">
+                                        <rect key="frame" x="8" y="13" width="48" height="38"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.98823529409999999" green="0.98823529409999999" blue="0.99215686270000003" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="261-BN-SSu">
-                                <rect key="frame" x="16" y="248" width="148" height="74"/>
+                                <rect key="frame" x="16" y="225" width="252" height="101"/>
                                 <string key="text">Where's your 
 next destination?</string>
-                                <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="SourceSansPro-Bold" family="Source Sans Pro" pointSize="32"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="v4d-Le-he8">
+                                <rect key="frame" x="16" y="334" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="whiteFlightIcon" translatesAutoresizingMaskIntoConstraints="NO" id="gTx-1z-buq">
+                                        <rect key="frame" x="8" y="13" width="48" height="38"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.9882352941176471" green="0.9882352941176471" blue="0.99215686274509807" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Flights" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ii-fA-sOv">
+                                <rect key="frame" x="27" y="406" width="49" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SourceSansPro-Bold" family="Source Sans Pro" pointSize="16"/>
+                                <color key="textColor" name="ViewBGColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hotels" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g3D-fO-zTx">
+                                <rect key="frame" x="112" y="406" width="46" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SourceSansPro-Bold" family="Source Sans Pro" pointSize="16"/>
+                                <color key="textColor" name="ViewBGColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TOP-PICK ARTICLES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X54-uX-fEq">
+                                <rect key="frame" x="12" y="446" width="176" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SourceSansPro-SemiBold" family="Source Sans Pro" pointSize="20"/>
+                                <color key="textColor" name="TOP-PICKTitleColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -86,7 +133,7 @@ next destination?</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EUc-Wi-Izd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-75.384615384615387" y="453.55450236966823"/>
+            <point key="canvasLocation" x="-23" y="454"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="7nY-Ab-1Y8">
@@ -95,6 +142,19 @@ next destination?</string>
                     <view key="view" contentMode="scaleToFill" id="2Gy-CB-xkx">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Search" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LXh-Qt-4y0">
+                                <rect key="frame" x="31" y="74" width="89" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SourceSansPro-SemiBold" family="Source Sans Pro" pointSize="30"/>
+                                <color key="textColor" name="TitleColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="69J-Ej-oy4">
+                                <rect key="frame" x="158" y="222" width="116" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </pageControl>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Or2-Tl-y4i"/>
                         <color key="backgroundColor" name="ViewBGColor"/>
                     </view>
@@ -109,7 +169,7 @@ next destination?</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J6w-e2-avh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1900" y="-211"/>
+            <point key="canvasLocation" x="854" y="454"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="P8i-6k-E4Y">
@@ -125,14 +185,14 @@ next destination?</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o0m-bR-NL5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1928" y="-870"/>
+            <point key="canvasLocation" x="1698" y="454"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="DT9-93-0mo">
             <objects>
                 <tabBarController id="bQ5-qg-Wre" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="6oH-DA-CXS"/>
-                    <tabBar key="tabBar" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" selectionIndicatorImage="Rectangle 40" id="EUF-Q2-3PT">
+                    <tabBar key="tabBar" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" selectionIndicatorImage="tabBarBG" id="EUF-Q2-3PT">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -151,7 +211,6 @@ next destination?</string>
         </scene>
     </scenes>
     <resources>
-        <image name="Rectangle 40" width="68" height="48"/>
         <image name="bookmarks" width="20" height="20"/>
         <image name="bookmarksUnselected" width="28" height="27"/>
         <image name="home" width="18" height="19"/>
@@ -159,8 +218,17 @@ next destination?</string>
         <image name="homeViewBG" width="1170" height="1365"/>
         <image name="search" width="21" height="21"/>
         <image name="searchIcon" width="21" height="21"/>
+        <image name="tabBarBG" width="68" height="48"/>
+        <image name="whiteFlightIcon" width="36" height="29"/>
+        <image name="whiteHotelIcon" width="35" height="31"/>
+        <namedColor name="TOP-PICKTitleColor">
+            <color red="0.16078431372549021" green="0.17254901960784313" blue="0.23921568627450981" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TitleColor">
+            <color red="0.16099999845027924" green="0.17299999296665192" blue="0.23899999260902405" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="ViewBGColor">
-            <color red="0.9882352941176471" green="0.9882352941176471" blue="0.99215686274509807" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.98799997568130493" green="0.98799997568130493" blue="0.99199998378753662" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
