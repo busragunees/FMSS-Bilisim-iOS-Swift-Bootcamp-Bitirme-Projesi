@@ -8,16 +8,26 @@
 import UIKit
 
 class FlightTableViewCell: UITableViewCell {
-
+    @IBOutlet weak var flightCategoryLabel: UILabel!
+    @IBOutlet weak var flightImage: UIImageView!
+    @IBOutlet weak var flightNameLabel: UILabel!
+    @IBOutlet weak var flightDescLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    func setItem(item:FlightModel){
+        if let image = item.images{
+            self.flightImage.kf.setImage(with: URL(string:image))
+        }
+        if let to = item.to, let from = item.from{
+        flightNameLabel.text = to + " → " + from
+        }
+        if let date = item.date{
+            flightDescLabel.text = date + " " + (item.price?.priceWithCurrency ?? "")
+        }
+       
     }
-    
 }
+

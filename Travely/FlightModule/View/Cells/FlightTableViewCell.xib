@@ -18,18 +18,32 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="FlightTableViewCell" customModule="Travely" customModuleProvider="target">
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="flightTableViewCell" id="KGk-i7-Jjw" customClass="FlightTableViewCell" customModule="Travely" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="358" height="153"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
                 <rect key="frame" x="0.0" y="0.0" width="358" height="153"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mYc-El-LNH">
-                        <rect key="frame" x="0.0" y="0.0" width="358" height="153"/>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mYc-El-LNH">
+                        <rect key="frame" x="4" y="4" width="350" height="145"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="6"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </imageView>
+                    <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="coP-Qc-lxJ">
+                        <rect key="frame" x="4" y="4" width="350" height="145"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="6"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flight Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tt6-RI-lFI">
-                        <rect key="frame" x="20" y="35" width="316" height="31.666666666666671"/>
+                        <rect key="frame" x="20" y="35" width="316" height="53"/>
                         <fontDescription key="fontDescription" name="SourceSansPro-Bold" family="Source Sans Pro" pointSize="25"/>
                         <color key="textColor" name="whiteTitleColor"/>
                         <nil key="highlightedColor"/>
@@ -41,12 +55,12 @@
                             <constraint firstAttribute="height" constant="20" id="Nwa-Tx-Yxu"/>
                             <constraint firstAttribute="width" constant="46" id="hfA-YW-Naf"/>
                         </constraints>
-                        <fontDescription key="fontDescription" name="SourceSansPro-Bold" family="Source Sans Pro" pointSize="14"/>
+                        <fontDescription key="fontDescription" name="SourceSansPro-Bold" family="Source Sans Pro" pointSize="12"/>
                         <color key="textColor" name="whiteTitleColor"/>
                         <nil key="highlightedColor"/>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                <real key="value" value="2"/>
+                                <real key="value" value="16"/>
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </label>
@@ -64,21 +78,31 @@
                 <constraints>
                     <constraint firstItem="Z42-re-ehG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="2fn-nu-2Ng"/>
                     <constraint firstAttribute="bottomMargin" secondItem="Kh5-zH-B51" secondAttribute="bottom" constant="2" id="9to-8Y-RZk"/>
+                    <constraint firstItem="coP-Qc-lxJ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="Cu0-gX-6dY"/>
+                    <constraint firstAttribute="trailing" secondItem="coP-Qc-lxJ" secondAttribute="trailing" constant="4" id="FC8-Xl-40I"/>
                     <constraint firstItem="tt6-RI-lFI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" symbolic="YES" id="JPS-Ah-eIG"/>
-                    <constraint firstItem="mYc-El-LNH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="PP0-T9-NaP"/>
+                    <constraint firstItem="mYc-El-LNH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="4" id="PP0-T9-NaP"/>
                     <constraint firstItem="Z42-re-ehG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="11" id="QjM-GA-xV9"/>
-                    <constraint firstAttribute="bottom" secondItem="mYc-El-LNH" secondAttribute="bottom" id="b2H-pH-w0X"/>
+                    <constraint firstAttribute="bottom" secondItem="coP-Qc-lxJ" secondAttribute="bottom" constant="4" id="aCE-u4-0BD"/>
+                    <constraint firstAttribute="bottom" secondItem="mYc-El-LNH" secondAttribute="bottom" constant="4" id="b2H-pH-w0X"/>
+                    <constraint firstItem="coP-Qc-lxJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="4" id="hV9-sO-PQc"/>
                     <constraint firstItem="Kh5-zH-B51" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="1" id="ptJ-Qb-unD"/>
-                    <constraint firstItem="Kh5-zH-B51" firstAttribute="top" secondItem="tt6-RI-lFI" secondAttribute="bottom" constant="29.329999999999998" id="qzo-Aq-xuf"/>
+                    <constraint firstItem="Kh5-zH-B51" firstAttribute="top" secondItem="tt6-RI-lFI" secondAttribute="bottom" constant="8" id="qzo-Aq-xuf"/>
                     <constraint firstAttribute="trailingMargin" secondItem="Kh5-zH-B51" secondAttribute="trailing" constant="2" id="v8d-hp-e1s"/>
-                    <constraint firstItem="mYc-El-LNH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="wAT-oO-ZTE"/>
+                    <constraint firstItem="mYc-El-LNH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="wAT-oO-ZTE"/>
                     <constraint firstAttribute="trailing" secondItem="tt6-RI-lFI" secondAttribute="trailing" constant="22" id="wX1-aa-JAs"/>
-                    <constraint firstAttribute="trailing" secondItem="mYc-El-LNH" secondAttribute="trailing" id="wdN-HR-hIC"/>
+                    <constraint firstAttribute="trailing" secondItem="mYc-El-LNH" secondAttribute="trailing" constant="4" id="wdN-HR-hIC"/>
                     <constraint firstItem="tt6-RI-lFI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="35" id="z85-h8-qt8"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="flightCategoryLabel" destination="Z42-re-ehG" id="S8w-qt-WWm"/>
+                <outlet property="flightDescLabel" destination="Kh5-zH-B51" id="pWk-Vh-Kf5"/>
+                <outlet property="flightImage" destination="mYc-El-LNH" id="nc2-7V-60k"/>
+                <outlet property="flightNameLabel" destination="tt6-RI-lFI" id="kUE-Hg-jJx"/>
+            </connections>
             <point key="canvasLocation" x="76.92307692307692" y="20.971563981042653"/>
         </tableViewCell>
     </objects>

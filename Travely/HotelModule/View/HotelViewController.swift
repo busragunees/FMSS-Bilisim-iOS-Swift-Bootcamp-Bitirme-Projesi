@@ -25,8 +25,6 @@ class HotelViewController: UIViewController {
     }
 }
 
-
-
 extension HotelViewController: HotelViewModelProtocol {
     func didCellItemFetch(_ items: [HotelModel]) {
         hotelList = items

@@ -24,20 +24,29 @@
                 <rect key="frame" x="0.0" y="0.0" width="358" height="153"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OuK-0Q-wx2">
-                        <rect key="frame" x="0.0" y="0.0" width="358" height="153"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="153" id="O3s-DF-qlM"/>
-                            <constraint firstAttribute="width" constant="358" id="lcq-Ix-raq"/>
-                        </constraints>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OuK-0Q-wx2">
+                        <rect key="frame" x="4" y="4" width="350" height="145"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hotel Desc" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sPg-Mo-dC2">
+                    <view alpha="0.40000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eQV-oM-Ho5">
+                        <rect key="frame" x="4" y="4" width="350" height="145"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Hotel Desc" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sPg-Mo-dC2">
                         <rect key="frame" x="22" y="93" width="315" height="45"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="45" id="ONW-od-LLc"/>
                             <constraint firstAttribute="width" constant="315" id="jn7-i0-CSP"/>
                         </constraints>
-                        <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="18"/>
+                        <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="15"/>
                         <color key="textColor" name="whiteTitleColor"/>
                         <nil key="highlightedColor"/>
                     </label>
@@ -57,11 +66,10 @@
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hotel Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J2N-R9-Sbn">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Hotel Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J2N-R9-Sbn">
                         <rect key="frame" x="21" y="37" width="316" height="41"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="316" id="JI0-5m-B8v"/>
-                            <constraint firstAttribute="height" constant="41" id="hmj-DE-64E"/>
                         </constraints>
                         <fontDescription key="fontDescription" name="SourceSansPro-Bold" family="Source Sans Pro" pointSize="25"/>
                         <color key="textColor" name="whiteTitleColor"/>
@@ -72,16 +80,20 @@
                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
                     <constraint firstAttribute="trailingMargin" secondItem="sPg-Mo-dC2" secondAttribute="trailing" constant="1" id="0Hv-2H-laO"/>
-                    <constraint firstItem="OuK-0Q-wx2" firstAttribute="top" secondItem="ggW-y8-Kb0" secondAttribute="top" id="22a-Ty-sg4"/>
-                    <constraint firstAttribute="trailing" secondItem="OuK-0Q-wx2" secondAttribute="trailing" id="8x5-C1-wqY"/>
-                    <constraint firstAttribute="bottom" secondItem="OuK-0Q-wx2" secondAttribute="bottom" id="BOr-yX-qI1"/>
+                    <constraint firstAttribute="trailing" secondItem="eQV-oM-Ho5" secondAttribute="trailing" constant="4" id="6EO-4F-P8E"/>
+                    <constraint firstAttribute="bottom" secondItem="eQV-oM-Ho5" secondAttribute="bottom" constant="4" id="6ex-LS-dHj"/>
+                    <constraint firstItem="eQV-oM-Ho5" firstAttribute="top" secondItem="ggW-y8-Kb0" secondAttribute="top" constant="4" id="8jJ-3x-aUq"/>
+                    <constraint firstItem="eQV-oM-Ho5" firstAttribute="leading" secondItem="ggW-y8-Kb0" secondAttribute="leading" constant="4" id="BMC-Kz-rLL"/>
+                    <constraint firstItem="OuK-0Q-wx2" firstAttribute="leading" secondItem="ggW-y8-Kb0" secondAttribute="leading" constant="4" id="CXT-So-EaS"/>
                     <constraint firstItem="MOD-37-ffU" firstAttribute="leading" secondItem="ggW-y8-Kb0" secondAttribute="leading" constant="10" id="FFL-bf-yJo"/>
                     <constraint firstAttribute="trailing" secondItem="J2N-R9-Sbn" secondAttribute="trailing" constant="21" id="QIa-RF-dGS"/>
+                    <constraint firstAttribute="bottom" secondItem="OuK-0Q-wx2" secondAttribute="bottom" constant="4" id="SeB-2m-Hto"/>
+                    <constraint firstItem="OuK-0Q-wx2" firstAttribute="top" secondItem="ggW-y8-Kb0" secondAttribute="top" constant="4" id="WdP-gl-Z3j"/>
                     <constraint firstItem="sPg-Mo-dC2" firstAttribute="leading" secondItem="ggW-y8-Kb0" secondAttribute="leadingMargin" constant="2" id="YHy-8q-Suc"/>
                     <constraint firstItem="sPg-Mo-dC2" firstAttribute="top" secondItem="J2N-R9-Sbn" secondAttribute="bottom" constant="15" id="aht-hQ-FKJ"/>
                     <constraint firstAttribute="bottomMargin" secondItem="sPg-Mo-dC2" secondAttribute="bottom" constant="4" id="eRg-a7-ten"/>
                     <constraint firstItem="J2N-R9-Sbn" firstAttribute="top" secondItem="ggW-y8-Kb0" secondAttribute="top" constant="37" id="nn2-0p-Te1"/>
-                    <constraint firstItem="OuK-0Q-wx2" firstAttribute="leading" secondItem="ggW-y8-Kb0" secondAttribute="leading" id="o48-L5-oe8"/>
+                    <constraint firstAttribute="trailing" secondItem="OuK-0Q-wx2" secondAttribute="trailing" constant="4" id="s74-9u-GRd"/>
                     <constraint firstItem="MOD-37-ffU" firstAttribute="top" secondItem="ggW-y8-Kb0" secondAttribute="top" constant="10" id="sU0-1S-XsM"/>
                     <constraint firstItem="J2N-R9-Sbn" firstAttribute="leading" secondItem="ggW-y8-Kb0" secondAttribute="leading" constant="21" id="wrH-5a-CTh"/>
                 </constraints>
@@ -93,7 +105,7 @@
                 <outlet property="hotelImage" destination="OuK-0Q-wx2" id="fQ6-G9-2zO"/>
                 <outlet property="hotelNameLabel" destination="J2N-R9-Sbn" id="aHl-Pa-sE3"/>
             </connections>
-            <point key="canvasLocation" x="-15" y="-112"/>
+            <point key="canvasLocation" x="-15.384615384615383" y="-112.67772511848341"/>
         </tableViewCell>
     </objects>
     <resources>

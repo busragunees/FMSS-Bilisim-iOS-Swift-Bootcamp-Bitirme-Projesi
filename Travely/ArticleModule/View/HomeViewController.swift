@@ -15,7 +15,14 @@ class HomeViewConroller: UIViewController {
             self.navigateHotels.tappable = true
         }
     }
-  
+    
+    @IBOutlet weak var navigateFlights: UIView!{
+        didSet {
+            self.navigateFlights.tappable = true
+        }
+    }
+   
+    
     
     
     override func viewDidLoad() {
@@ -24,7 +31,10 @@ class HomeViewConroller: UIViewController {
             let hotelVC = self.storyboard?.instantiateViewController(withIdentifier: "hotelsIdentfy") as! HotelViewController
             self.navigationController?.pushViewController(hotelVC, animated: true)
         }
-        
+        self.navigateFlights.callback = {
+            let flightVC = self.storyboard?.instantiateViewController(withIdentifier: "flightsIdentfy") as! FlightViewController
+            self.navigationController?.pushViewController(flightVC, animated: true)
+        }
     }
 }
 

@@ -207,6 +207,7 @@ next destination?</string>
                     <navigationItem key="navigationItem" id="dj5-Jy-14y"/>
                     <connections>
                         <outlet property="articleCollectionView" destination="nXk-Sk-zeO" id="10u-by-IAf"/>
+                        <outlet property="navigateFlights" destination="v4d-Le-he8" id="m9V-vH-YAl"/>
                         <outlet property="navigateHotels" destination="VfH-Yj-mtA" id="osh-Zx-IzP"/>
                         <segue destination="h1G-A5-4y5" kind="show" id="UQG-N6-8F2"/>
                         <segue destination="eWH-TK-IpB" kind="show" id="pMH-iV-zZG"/>
@@ -252,16 +253,31 @@ next destination?</string>
         <!--Flights-->
         <scene sceneID="7gP-QA-WaT">
             <objects>
-                <viewController id="eWH-TK-IpB" customClass="HotelViewController" customModule="Travely" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="flightsIdentfy" id="eWH-TK-IpB" customClass="FlightViewController" customModule="Travely" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QTb-eU-I65">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Oea-k4-QLl">
+                                <rect key="frame" x="0.0" y="121" width="390" height="599"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="DqZ-CH-14m"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Oea-k4-QLl" firstAttribute="leading" secondItem="QTb-eU-I65" secondAttribute="leading" id="7Md-ac-Ii1"/>
+                            <constraint firstItem="Oea-k4-QLl" firstAttribute="top" secondItem="DqZ-CH-14m" secondAttribute="top" constant="30" id="CSX-vB-D5D"/>
+                            <constraint firstItem="DqZ-CH-14m" firstAttribute="bottom" secondItem="Oea-k4-QLl" secondAttribute="bottom" constant="41" id="XIT-7v-odY"/>
+                            <constraint firstItem="DqZ-CH-14m" firstAttribute="trailing" secondItem="Oea-k4-QLl" secondAttribute="trailing" id="biG-mD-RJe"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Flights" id="S5z-dn-Cvw">
                         <barButtonItem key="backBarButtonItem" title="Flights" id="qhP-MZ-LkY"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="flightTableView" destination="Oea-k4-QLl" id="jYF-g2-4CC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pEK-1J-eHP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -474,7 +490,7 @@ next destination?</string>
                             <constraint firstItem="LXh-Qt-4y0" firstAttribute="leading" secondItem="Or2-Tl-y4i" secondAttribute="leading" constant="16" id="oFS-up-mzl"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" tag="5" title="" image="searchIcon" selectedImage="emptyBookmarks" id="ZGG-Gf-Dio">
+                    <tabBarItem key="tabBarItem" tag="5" title="" image="searchIcon" selectedImage="search" id="ZGG-Gf-Dio">
                         <color key="badgeColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
@@ -487,10 +503,10 @@ next destination?</string>
             </objects>
             <point key="canvasLocation" x="-360" y="487.67772511848341"/>
         </scene>
-        <!--Hotel View Controller-->
+        <!--View Controller-->
         <scene sceneID="P8i-6k-E4Y">
             <objects>
-                <viewController id="trw-xE-bqW" customClass="HotelViewController" customModule="Travely" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="trw-xE-bqW" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Jy7-1s-ZfK">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -567,6 +583,7 @@ next destination?</string>
         <image name="homeViewBG" width="390" height="455"/>
         <image name="hotels" width="20" height="18"/>
         <image name="redSearchIcon" width="21" height="21"/>
+        <image name="search" width="21" height="21"/>
         <image name="searchIcon" width="21" height="21"/>
         <image name="tabBarBG" width="68" height="48"/>
         <image name="whiteFlightIcon" width="36" height="29"/>

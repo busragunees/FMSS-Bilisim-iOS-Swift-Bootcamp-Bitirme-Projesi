@@ -86,7 +86,19 @@ class NetworkManager {
         }
     }
     
-   
+    public func getFlights(complition: @escaping ([FlightModel]?) -> Void,fail:  @escaping()-> Void){
+        NetworkManager.instance.fetch(HTTPMethod.get, url: "https://busra-travely-api.herokuapp.com/flights" , requestModel: nil, model:[FlightModel].self ) { response in
+            switch(response)
+            {
+            case .success(let model):
+                let flightModel = model as! [FlightModel]
+                complition(flightModel)
+            case .failure(_):
+                fail()
+                break
+            }
+        }
+    }
 }
 
 

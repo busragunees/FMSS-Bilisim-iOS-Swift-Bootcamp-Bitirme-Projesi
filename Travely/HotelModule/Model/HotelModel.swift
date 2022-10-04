@@ -13,10 +13,10 @@ struct HotelModel:Codable{
     var desc:String?
     var images:[String]?
     var features:[String]?
-    var location:Location?
+    var location:HotelLocation?
 }
 
-struct Location:Codable{
+struct HotelLocation:Codable{
     var lat:Double?
     var lng:Double?
 }
