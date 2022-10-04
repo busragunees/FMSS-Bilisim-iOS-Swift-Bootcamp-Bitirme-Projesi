@@ -217,7 +217,7 @@ next destination?</string>
             </objects>
             <point key="canvasLocation" x="1281.5384615384614" y="487.67772511848341"/>
         </scene>
-        <!--hotels-->
+        <!--Hotels-->
         <scene sceneID="ntC-r6-YeB">
             <objects>
                 <viewController storyboardIdentifier="hotelsIdentfy" id="h1G-A5-4y5" customClass="HotelViewController" customModule="Travely" customModuleProvider="target" sceneMemberID="viewController">
@@ -226,7 +226,7 @@ next destination?</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="dpA-MQ-fNv">
-                                <rect key="frame" x="0.0" y="116" width="390" height="599"/>
+                                <rect key="frame" x="0.0" y="168" width="390" height="547"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
@@ -239,9 +239,7 @@ next destination?</string>
                             <constraint firstItem="dpA-MQ-fNv" firstAttribute="leading" secondItem="CtZ-sR-nsp" secondAttribute="leading" id="kuK-Ki-69P"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="hotels" id="UQ2-Bc-lrQ">
-                        <barButtonItem key="backBarButtonItem" title="Hotels" id="U5s-K6-dOx"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Hotels" id="UQ2-Bc-lrQ"/>
                     <connections>
                         <outlet property="hotelTableView" destination="dpA-MQ-fNv" id="l3X-St-Y1n"/>
                     </connections>
@@ -259,7 +257,7 @@ next destination?</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Oea-k4-QLl">
-                                <rect key="frame" x="0.0" y="121" width="390" height="599"/>
+                                <rect key="frame" x="0.0" y="173" width="390" height="547"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
@@ -272,9 +270,7 @@ next destination?</string>
                             <constraint firstItem="DqZ-CH-14m" firstAttribute="trailing" secondItem="Oea-k4-QLl" secondAttribute="trailing" id="biG-mD-RJe"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Flights" id="S5z-dn-Cvw">
-                        <barButtonItem key="backBarButtonItem" title="Flights" id="qhP-MZ-LkY"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Flights" id="S5z-dn-Cvw"/>
                     <connections>
                         <outlet property="flightTableView" destination="Oea-k4-QLl" id="jYF-g2-4CC"/>
                     </connections>
@@ -561,8 +557,8 @@ next destination?</string>
             <objects>
                 <navigationController id="duV-5l-dWh" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="2JT-b8-Rl0"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="7KX-sK-EVj">
-                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="7KX-sK-EVj">
+                        <rect key="frame" x="0.0" y="47" width="390" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
