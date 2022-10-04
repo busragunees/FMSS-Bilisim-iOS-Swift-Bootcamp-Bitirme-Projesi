@@ -6,6 +6,6 @@ target 'Travely' do
   use_frameworks!
 
   pod 'Kingfisher', '~> 7.3'
-  pod 'BubbleTabBar', '~> 0.9'
   pod 'Alamofire', '~> 5.6'
+  pod 'SwiftyJSON', '~> 5.0'
 end

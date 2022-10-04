@@ -1,24 +1,24 @@
 PODS:
   - Alamofire (5.6.2)
-  - BubbleTabBar (0.9.0)
   - Kingfisher (7.3.2)
+  - SwiftyJSON (5.0.1)
 
 DEPENDENCIES:
   - Alamofire (~> 5.6)
-  - BubbleTabBar (~> 0.9)
   - Kingfisher (~> 7.3)
+  - SwiftyJSON (~> 5.0)
 
 SPEC REPOS:
   trunk:
     - Alamofire
-    - BubbleTabBar
     - Kingfisher
+    - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: d368e1ff8a298e6dde360e35a3e68e6c610e7204
-  BubbleTabBar: 9b63c3394182b9d866c54b11bcc887da98611fb8
   Kingfisher: 0086ad83719761ba9b2cdaf6ef4d5b4878cbae23
+  SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
 
-PODFILE CHECKSUM: 4715fd04c5299db50e8a7a62549ed0fce8d13270
+PODFILE CHECKSUM: 589f98a49b358a7b4f7237813debec653d283ae1
 
 COCOAPODS: 1.11.3
