@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class FlightTableViewCell: UITableViewCell {
     @IBOutlet weak var flightCategoryLabel: UILabel!

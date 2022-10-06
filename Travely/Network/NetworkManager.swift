@@ -72,6 +72,7 @@ class NetworkManager {
         return try? JSONSerialization.jsonObject(with: data, options: []) as? [String: Any]
     }
     
+    //MARK: - get fonk articles,hotels,flights
     public func getHotels(complition: @escaping ([HotelModel]?) -> Void,fail:  @escaping()-> Void){
         NetworkManager.instance.fetch(HTTPMethod.get, url: "https://busra-travely-api.herokuapp.com/hotels" , requestModel: nil, model:[HotelModel].self ) { response in
             switch(response)
@@ -93,6 +94,19 @@ class NetworkManager {
             case .success(let model):
                 let flightModel = model as! [FlightModel]
                 complition(flightModel)
+            case .failure(_):
+                fail()
+                break
+            }
+        }
+    }
+    public func getArticles(complition: @escaping ([ArticleModel]?) -> Void,fail:  @escaping()-> Void){
+        NetworkManager.instance.fetch(HTTPMethod.get, url: "https://busra-travely-api.herokuapp.com/articles" , requestModel: nil, model:[ArticleModel].self ) { response in
+            switch(response)
+            {
+            case .success(let model):
+                let articleModel = model as! [ArticleModel]
+                complition(articleModel)
             case .failure(_):
                 fail()
                 break

@@ -9,10 +9,27 @@ import UIKit
 
 class ArticleCollectionViewCell: UICollectionViewCell {
     
-    @IBOutlet weak var saveIcon: UIImageView!
+
     @IBOutlet weak var saveIconView: UIView!
+    @IBOutlet weak var saveIcon: UIImageView!
+    @IBOutlet weak var articleCellCategory: UILabel!
     @IBOutlet weak var articleCellImage: UIImageView!
     @IBOutlet weak var articleCellTitle: UILabel!
-    @IBOutlet weak var articleCellDesc: UILabel!
+  
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+    }
+    
+    func setItem(item:ArticleModel){
+        if let image = item.images?.first{
+            self.articleCellImage.kf.setImage(with: URL(string:image))
+        }
+        articleCellCategory.text = item.category
+        articleCellTitle.text = item.title
+
+    }
+    
+    
     
 }

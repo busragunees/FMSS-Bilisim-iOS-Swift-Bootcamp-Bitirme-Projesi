@@ -51,17 +51,17 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.9882352352142334" green="0.9882352352142334" blue="0.99215686321258545" alpha="0.29775455298013243" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flights" translatesAutoresizingMaskIntoConstraints="NO" id="kxG-Ze-8zv">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kxG-Ze-8zv">
                                 <rect key="frame" x="0.0" y="0.0" width="253" height="112"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="112" id="Kej-4t-pRS"/>
                                     <constraint firstAttribute="width" constant="253" id="ehe-9V-OFi"/>
                                 </constraints>
                             </imageView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C8n-76-aQb">
+                            <view alpha="0.29999999999999999" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C8n-76-aQb">
                                 <rect key="frame" x="207" y="10" width="32" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" systemColor="tintColor"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -73,18 +73,26 @@
                                 <rect key="frame" x="211" y="13" width="24" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <view alpha="0.40000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xIh-Rh-E19">
+                                <rect key="frame" x="0.0" y="0.0" width="253" height="112"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="QSc-O3-0cA" secondAttribute="trailing" constant="7" id="0Qc-uO-Vaq"/>
+                            <constraint firstItem="xIh-Rh-E19" firstAttribute="top" secondItem="3Iu-vr-XDQ" secondAttribute="top" id="AqP-2P-N7K"/>
                             <constraint firstItem="AT5-tz-5Be" firstAttribute="leading" secondItem="3Iu-vr-XDQ" secondAttribute="leading" constant="8" id="D7P-bb-ZJ2"/>
                             <constraint firstItem="AT5-tz-5Be" firstAttribute="top" secondItem="kxG-Ze-8zv" secondAttribute="bottom" constant="15" id="Mqf-uj-Bbz"/>
                             <constraint firstAttribute="trailing" secondItem="kxG-Ze-8zv" secondAttribute="trailing" id="NJC-lF-bFT"/>
                             <constraint firstItem="QSc-O3-0cA" firstAttribute="top" secondItem="AT5-tz-5Be" secondAttribute="bottom" constant="5" id="RfZ-2w-3iz"/>
                             <constraint firstItem="QSc-O3-0cA" firstAttribute="top" secondItem="AT5-tz-5Be" secondAttribute="bottom" constant="5" id="T8g-bS-1nj"/>
+                            <constraint firstItem="AT5-tz-5Be" firstAttribute="top" secondItem="xIh-Rh-E19" secondAttribute="bottom" constant="15" id="USp-Kk-8fb"/>
+                            <constraint firstItem="xIh-Rh-E19" firstAttribute="leading" secondItem="3Iu-vr-XDQ" secondAttribute="leading" id="X2f-9t-ijV"/>
                             <constraint firstAttribute="bottom" secondItem="QSc-O3-0cA" secondAttribute="bottom" constant="8" id="Yf6-ag-Uiu"/>
                             <constraint firstItem="kxG-Ze-8zv" firstAttribute="top" secondItem="3Iu-vr-XDQ" secondAttribute="top" id="aDn-Ga-kDb"/>
                             <constraint firstItem="kxG-Ze-8zv" firstAttribute="leading" secondItem="3Iu-vr-XDQ" secondAttribute="leading" id="eEh-NQ-nvr"/>
+                            <constraint firstAttribute="trailing" secondItem="xIh-Rh-E19" secondAttribute="trailing" id="ff6-UC-iST"/>
                             <constraint firstItem="QSc-O3-0cA" firstAttribute="leading" secondItem="3Iu-vr-XDQ" secondAttribute="leading" constant="8" id="z7K-ce-cFJ"/>
                         </constraints>
                     </view>
@@ -99,21 +107,23 @@
             <size key="customSize" width="366" height="201"/>
             <userDefinedRuntimeAttributes>
                 <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                    <real key="value" value="6"/>
+                    <real key="value" value="8"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                    <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </userDefinedRuntimeAttribute>
             </userDefinedRuntimeAttributes>
             <connections>
-                <outlet property="articleCellDesc" destination="QSc-O3-0cA" id="ZNh-hp-ZS8"/>
+                <outlet property="articleCellCategory" destination="AT5-tz-5Be" id="tat-Ff-Fr6"/>
                 <outlet property="articleCellImage" destination="kxG-Ze-8zv" id="4wK-Nb-jf0"/>
-                <outlet property="articleCellTitle" destination="AT5-tz-5Be" id="jIr-so-TEh"/>
-                <outlet property="saveIcon" destination="wI5-Xp-QtC" id="Mtx-Wi-rj6"/>
-                <outlet property="saveIconView" destination="C8n-76-aQb" id="iLz-q6-n3x"/>
+                <outlet property="articleCellTitle" destination="QSc-O3-0cA" id="3SC-x5-QL2"/>
+                <outlet property="saveIcon" destination="wI5-Xp-QtC" id="cdx-Am-Bd7"/>
+                <outlet property="saveIconView" destination="C8n-76-aQb" id="9g8-s9-RYd"/>
             </connections>
             <point key="canvasLocation" x="46.92307692307692" y="31.990521327014218"/>
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="flights" width="21" height="17"/>
         <image name="saveIcon" width="14" height="17"/>
         <namedColor name="categoryColor">
             <color red="0.10980392156862745" green="0.27843137254901962" blue="0.90588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -123,9 +133,6 @@
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="tintColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

@@ -57,5 +57,9 @@ extension HotelViewController:UITableViewDelegate,UITableViewDataSource{
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        let detailVC = self.storyboard?.instantiateViewController(withIdentifier: "detailsIdentfy") as! DetailViewController
+        detailVC.hotel = hotelList[indexPath.row]
+        self.navigationController?.pushViewController(detailVC, animated: true)
+        
     }
 }
