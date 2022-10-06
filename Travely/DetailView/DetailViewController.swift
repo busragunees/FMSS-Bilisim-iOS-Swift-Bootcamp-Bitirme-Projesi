@@ -22,8 +22,13 @@ class DetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        image.clipsToBounds = true
+        image.layer.cornerRadius = 44
+        image.layer.maskedCorners = [.layerMinXMaxYCorner, .layerMaxXMaxYCorner]
+        
         if let article = article{
             setArticle(item:article)
+            
         }
         if let hotel = hotel{
             setHotel(item:hotel)
@@ -56,5 +61,6 @@ class DetailViewController: UIViewController {
         }
         categoryLabel.text = item.features
         titleLabel.text = (item.to ?? "") + "→" + (item.from ?? "")
+        //desc metni nasıl olsun??
     }
 }

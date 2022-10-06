@@ -8,10 +8,8 @@
 import UIKit
 
 class HomeViewConroller: UIViewController{
-
     
     @IBOutlet weak var articleCollectionView: UICollectionView!
-    
     @IBOutlet weak var navigateHotels: UIView! {
         didSet {
             self.navigateHotels.tappable = true
@@ -25,17 +23,15 @@ class HomeViewConroller: UIViewController{
     private let articleCellReuseIdentifier = "articleCollectionViewCell"
     var articleList = [ArticleModel]()
     private let viewModel = ArticleViewModel()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         articleCollectionView.delegate = self
         articleCollectionView.dataSource = self
         viewModel.viewDelegate = self
         viewModel.getArticles()
         self.articleCollectionView.register(.init(nibName: "ArticleCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: articleCellReuseIdentifier)
         
-//for selected cells.
+//for select cells.
         self.navigateHotels.callback = {
             let hotelVC = self.storyboard?.instantiateViewController(withIdentifier: "hotelsIdentfy") as! HotelViewController
             self.navigationController?.pushViewController(hotelVC, animated: true)
