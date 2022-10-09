@@ -21,7 +21,7 @@ class ArticleCollectionViewCell: UICollectionViewCell {
         super.awakeFromNib()
     }
     
-    func setItem(item:ArticleModel){
+    func setItem(item:TravelModel){
         if let image = item.images?.first{
             self.articleCellImage.kf.setImage(with: URL(string:image))
         }

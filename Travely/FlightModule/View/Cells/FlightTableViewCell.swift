@@ -18,12 +18,12 @@ class FlightTableViewCell: UITableViewCell {
         super.awakeFromNib()
     }
 
-    func setItem(item:FlightModel){
-        if let image = item.images{
+    func setItem(item:TravelModel){
+        if let image = item.images?.first{
             self.flightImage.kf.setImage(with: URL(string:image))
         }
-        if let to = item.to, let from = item.from{
-        flightNameLabel.text = to + " → " + from
+        if let title = item.title{
+        flightNameLabel.text = title
         }
         if let date = item.date{
             flightDescLabel.text = date + " " + (item.price?.priceWithCurrency ?? "")

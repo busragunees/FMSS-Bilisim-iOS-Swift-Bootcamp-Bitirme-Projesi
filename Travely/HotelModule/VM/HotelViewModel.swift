@@ -8,7 +8,7 @@
 import Foundation
 
 protocol HotelViewModelProtocol:AnyObject{
-    func didCellItemFetch(_ items: [HotelModel])
+    func didCellItemFetch(_ items: [TravelModel])
     func showEmptyView()
     func hideEmptyView()
     func showError()

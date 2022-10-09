@@ -21,7 +21,7 @@ class HomeViewConroller: UIViewController{
         }
     }
     private let articleCellReuseIdentifier = "articleCollectionViewCell"
-    var articleList = [ArticleModel]()
+    var articleList = [TravelModel]()
     private let viewModel = ArticleViewModel()
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,7 +44,7 @@ class HomeViewConroller: UIViewController{
 }
 
 extension HomeViewConroller: ArticleViewModelProtocol {
-    func didCellItemFetch(_ items: [ArticleModel]) {
+    func didCellItemFetch(_ items: [TravelModel]) {
         articleList = items
         print("article list ", items.count)
         print("article 2", articleList.count)
@@ -76,7 +76,7 @@ extension HomeViewConroller:UICollectionViewDelegate,UICollectionViewDataSource,
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let detailVC = self.storyboard?.instantiateViewController(withIdentifier: "detailsIdentfy") as! DetailViewController
-        detailVC.article = articleList[indexPath.row]
+        detailVC.travelItem = articleList[indexPath.row]
         self.navigationController?.pushViewController(detailVC, animated: true)
         
     }

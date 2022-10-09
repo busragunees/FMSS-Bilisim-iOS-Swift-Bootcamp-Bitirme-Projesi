@@ -12,7 +12,7 @@ class HotelViewController: UIViewController {
     @IBOutlet weak var hotelTableView: UITableView!
     private let hotelCellReuseIdentifier = "hotelTableViewCell"
     
-    var hotelList = [HotelModel]()
+    var hotelList = [TravelModel]()
     private let viewModel = HotelViewModel()
 
     override func viewDidLoad() {
@@ -26,7 +26,7 @@ class HotelViewController: UIViewController {
 }
 
 extension HotelViewController: HotelViewModelProtocol {
-    func didCellItemFetch(_ items: [HotelModel]) {
+    func didCellItemFetch(_ items: [TravelModel]) {
         hotelList = items
         print("hotel list ", items.count)
         print("hotellist 2", hotelList.count)
@@ -58,7 +58,7 @@ extension HotelViewController:UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         let detailVC = self.storyboard?.instantiateViewController(withIdentifier: "detailsIdentfy") as! DetailViewController
-        detailVC.hotel = hotelList[indexPath.row]
+        detailVC.travelItem = hotelList[indexPath.row]
         self.navigationController?.pushViewController(detailVC, animated: true)
         
     }

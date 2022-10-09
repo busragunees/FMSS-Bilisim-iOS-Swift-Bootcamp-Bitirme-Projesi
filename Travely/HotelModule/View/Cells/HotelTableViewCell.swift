@@ -20,11 +20,11 @@ class HotelTableViewCell: UITableViewCell {
 
     }
     
-    func setItem(item:HotelModel){
+    func setItem(item:TravelModel){
         if let image = item.images?.first{
             self.hotelImage.kf.setImage(with: URL(string:image))
         }
-        hotelNameLabel.text = item.name
+        hotelNameLabel.text = item.title
         hotelDescLabel.text = item.desc
     }
 }

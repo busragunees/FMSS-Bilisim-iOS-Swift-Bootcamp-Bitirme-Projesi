@@ -8,7 +8,7 @@
 import Foundation
 
 protocol ArticleViewModelProtocol:AnyObject{
-    func didCellItemFetch(_ items: [ArticleModel])
+    func didCellItemFetch(_ items: [TravelModel])
     func showEmptyView()
     func hideEmptyView()
     func showError()

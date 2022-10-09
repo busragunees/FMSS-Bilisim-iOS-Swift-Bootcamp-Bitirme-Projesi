@@ -13,7 +13,7 @@ class StorageManager {
     static let shared = StorageManager()
     
     private var persistentContainer: NSPersistentContainer = {
-        let container = NSPersistentContainer(name: "ToDoList")
+        let container = NSPersistentContainer(name: "Travely")
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             if let error = error as NSError? {
                 
@@ -42,50 +42,61 @@ extension StorageManager {
             }
         }
     }
+ 
+    func fetchDataById<T:NSManagedObject>(entity:T.Type,id:String,completion: (Result<Any?, Error>) -> Void)  {
+        let fetchRequest = T.fetchRequest()
+        
+        fetchRequest.predicate = NSPredicate(
+            format: "id == %@", id
+        )
+        
+        do {
+            let item = try context.fetch(fetchRequest)
+            
+            completion(.success(item.first))
+        } catch {
+            completion(.failure(error))
+        }
+    }
+    
+    
+    func fetchData<T:NSManagedObject>(entity:T.Type,completion: (Result<[Any], Error>) -> Void)  {
+        let fetchRequest = T.fetchRequest()
+      
+        
+        do {
+            let list = try context.fetch(fetchRequest)
+            
+            completion(.success(list))
+        } catch {
+            completion(.failure(error))
+        }
+    }
     
     //MARK: - Delete data functions on bookmarks
-    func delete(deleteArticle: ArticleEntity) {
-        context.delete(deleteArticle)
+    func deleteBookmark(entity: TravelEntity, completion:() ->Void) {
+        context.delete(entity)
         saveContext()
+        completion()
     }
-    func delete(deleteHotel: HotelEntity) {
-        context.delete(deleteHotel)
-        saveContext()
-    }
-    func delete(deleteFlight: FlightEntity) {
-        context.delete(deleteFlight)
-        saveContext()
-    }
+
     
     //MARK: - Add data functions on bookmarks
-    func addHotelBookmarks(name: String, desc:String, features:String, location:Double, images:String, completion: (HotelEntity) -> Void) {
-        let hotel = HotelEntity(context: context)
-        hotel.name = name
-        hotel.features = features
-        hotel.desc = desc
-        hotel.location = location
-        hotel.images = images
+ 
+    func addBookmark(item:TravelModel, completion: (TravelEntity) -> Void) {
+        let entity = TravelEntity(context: context)
+        entity.id = item.id
+        entity.title = item.title
+        entity.desc = item.desc
+        entity.category = item.category
+        entity.images = item.images
+        entity.features = item.features
+       // entity.location = item.location
+       // entity.price = item.price
+        entity.type = item.type
+    
         saveContext()
-        completion(hotel)
-    }
-    func addFlightBookmarks(date: String, features:String, from:String, to:String, images:String, price:String, completion: (FlightEntity) -> Void) {
-        let flight = FlightEntity(context: context)
-        flight.images = images
-        flight.features = features
-        flight.from = from
-        flight.to = to
-        flight.date = date
-        flight.price = price
-        saveContext()
-        completion(flight)
-    }
-    func addArticleBookmarks(title: String, category:String, images:String, completion: (ArticleEntity) -> Void) {
-        let article = ArticleEntity(context: context)
-        article.images = images
-        article.category = category
-        article.title = title
-        saveContext()
-        completion(article)
+        completion(entity)
     }
 }
 

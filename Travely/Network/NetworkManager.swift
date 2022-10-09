@@ -73,12 +73,12 @@ class NetworkManager {
     }
     
     //MARK: - get fonk articles,hotels,flights
-    public func getHotels(complition: @escaping ([HotelModel]?) -> Void,fail:  @escaping()-> Void){
-        NetworkManager.instance.fetch(HTTPMethod.get, url: "https://busra-travely-api.herokuapp.com/hotels" , requestModel: nil, model:[HotelModel].self ) { response in
+    public func getHotels(complition: @escaping ([TravelModel]?) -> Void,fail:  @escaping()-> Void){
+        NetworkManager.instance.fetch(HTTPMethod.get, url: "https://busra-travely-api.herokuapp.com/hotels" , requestModel: nil, model:[TravelModel].self ) { response in
             switch(response)
             {
             case .success(let model):
-                let hotelModel = model as! [HotelModel]
+                let hotelModel = model as! [TravelModel]
                 complition(hotelModel)
             case .failure(_):
                 fail()
@@ -87,12 +87,12 @@ class NetworkManager {
         }
     }
     
-    public func getFlights(complition: @escaping ([FlightModel]?) -> Void,fail:  @escaping()-> Void){
-        NetworkManager.instance.fetch(HTTPMethod.get, url: "https://busra-travely-api.herokuapp.com/flights" , requestModel: nil, model:[FlightModel].self ) { response in
+    public func getFlights(complition: @escaping ([TravelModel]?) -> Void,fail:  @escaping()-> Void){
+        NetworkManager.instance.fetch(HTTPMethod.get, url: "https://busra-travely-api.herokuapp.com/flights" , requestModel: nil, model:[TravelModel].self ) { response in
             switch(response)
             {
             case .success(let model):
-                let flightModel = model as! [FlightModel]
+                let flightModel = model as! [TravelModel]
                 complition(flightModel)
             case .failure(_):
                 fail()
@@ -100,12 +100,12 @@ class NetworkManager {
             }
         }
     }
-    public func getArticles(complition: @escaping ([ArticleModel]?) -> Void,fail:  @escaping()-> Void){
-        NetworkManager.instance.fetch(HTTPMethod.get, url: "https://busra-travely-api.herokuapp.com/articles" , requestModel: nil, model:[ArticleModel].self ) { response in
+    public func getArticles(complition: @escaping ([TravelModel]?) -> Void,fail:  @escaping()-> Void){
+        NetworkManager.instance.fetch(HTTPMethod.get, url: "https://busra-travely-api.herokuapp.com/articles" , requestModel: nil, model:[TravelModel].self ) { response in
             switch(response)
             {
             case .success(let model):
-                let articleModel = model as! [ArticleModel]
+                let articleModel = model as! [TravelModel]
                 complition(articleModel)
             case .failure(_):
                 fail()
