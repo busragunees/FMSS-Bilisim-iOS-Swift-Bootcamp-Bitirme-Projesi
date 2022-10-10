@@ -2,9 +2,6 @@
 
 ### 223. FMSS Bilişim iOS Swift Bootcamp - Travely App(Final Project)
 
-![Simulator](https://github.com/FMSS-IOS-Patika-Bootcamp/homework-3-berkayyalcn21/blob/main/images/appIcon.png) //simulator gelecek.
-
-
 #### Description
 - With this travel application where you can get information about the places you are going or want to go and access flight and hotel information.
 - The design was made over the Figma application and transferred to the code.

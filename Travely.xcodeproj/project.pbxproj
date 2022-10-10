@@ -124,16 +124,8 @@
 			isa = PBXGroup;
 			children = (
 				6417D36528F20DEC000100CD /* View */,
-				6417D36428F20DE1000100CD /* Vm */,
 			);
 			path = SearchModule;
-			sourceTree = "<group>";
-		};
-		6417D36428F20DE1000100CD /* Vm */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Vm;
 			sourceTree = "<group>";
 		};
 		6417D36528F20DEC000100CD /* View */ = {
