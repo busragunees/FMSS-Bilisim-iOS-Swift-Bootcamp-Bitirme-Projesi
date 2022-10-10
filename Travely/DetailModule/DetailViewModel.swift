@@ -10,6 +10,7 @@ import UIKit
 
 protocol DetailViewModelProtocol:AnyObject{
     func success()
+    func showRemoveBtn()
 }
 
 final class DetailViewModel {
@@ -21,6 +22,9 @@ final class DetailViewModel {
             switch result {
             case .success(let item):
                 travelEntity = (item as? TravelEntity)
+                if let travelEntity = self.travelEntity {
+                    viewDelegate?.showRemoveBtn()
+                }
                 break
             case .failure(_): break
             }

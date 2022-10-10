@@ -14,7 +14,7 @@ class HotelViewController: UIViewController {
     
     var hotelList = [TravelModel]()
     private let viewModel = HotelViewModel()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         hotelTableView.delegate = self

@@ -80,6 +80,11 @@ class DetailViewController: UIViewController {
 }
 
 extension DetailViewController: DetailViewModelProtocol{
+    func showRemoveBtn() {
+        self.addBtn.alpha = 0
+        self.removeBtn.alpha = 1
+    }
+    
     func success() {
         self.navigationController?.popViewController(animated:true)
     }

@@ -99,6 +99,11 @@
                 </constraints>
             </tableViewCellContentView>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <real key="value" value="8"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
             <connections>
                 <outlet property="hotelCategoryLabel" destination="MOD-37-ffU" id="7l3-Np-bg6"/>
                 <outlet property="hotelDescLabel" destination="sPg-Mo-dC2" id="7K8-5b-NNE"/>

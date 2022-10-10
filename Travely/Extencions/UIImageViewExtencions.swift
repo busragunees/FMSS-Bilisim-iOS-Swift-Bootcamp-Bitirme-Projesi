@@ -48,6 +48,8 @@ extension UIView {
     }
 
     @objc private func tapped() {
-        callback()
+        showAnimation {
+            self.callback()
+        }
     }
 }
