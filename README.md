@@ -11,21 +11,20 @@
 
 #### Screens
 <img  
-    src="https://github.com/busragunees/FMSS-Bilisim-iOS-Swift-Bootcamp-Bitirme-Projesi/blob/main/screenshots/home.png?raw=true" width="200" /> <img 
-    src="https://github.com/busragunees/FMSS-Bilisim-iOS-Swift-Bootcamp-Bitirme-Projesi/blob/main/screenshots/search-empty.png?raw=true" width="200" /> <img 
-    src="https://github.com/busragunees/FMSS-Bilisim-iOS-Swift-Bootcamp-Bitirme-Projesi/blob/main/screenshots/bookmarks.png?raw=true" width="200" /> <img
-
-<img src="https://github.com/busragunees/FMSS-Bilisim-iOS-Swift-Bootcamp-Bitirme-Projesi/blob/main/screenshots/search-data.png?raw=true" width="200" /> <img 
-    src="https://github.com/busragunees/FMSS-Bilisim-iOS-Swift-Bootcamp-Bitirme-Projesi/blob/main/screenshots/search-hotels.png?raw=true" width="200" /> <img
-    src="https://github.com/busragunees/FMSS-Bilisim-iOS-Swift-Bootcamp-Bitirme-Projesi/blob/main/screenshots/wrong-data-search.png?raw=true" width="200" 
- <img
- /> 
-
+    src="https://github.com/busragunees/FMSS-Bilisim-iOS-Swift-Bootcamp-Bitirme-Projesi/blob/main/screenshots/home.png?raw=true" width="200" /> 
+<img 
+    src="https://github.com/busragunees/FMSS-Bilisim-iOS-Swift-Bootcamp-Bitirme-Projesi/blob/main/screenshots/search-empty.png?raw=true" width="200" />
+<img 
+    src="https://github.com/busragunees/FMSS-Bilisim-iOS-Swift-Bootcamp-Bitirme-Projesi/blob/main/screenshots/bookmarks.png?raw=true" width="200" /> 
+<img src="https://github.com/busragunees/FMSS-Bilisim-iOS-Swift-Bootcamp-Bitirme-Projesi/blob/main/screenshots/search-data.png?raw=true" width="200" />
+<img 
+    src="https://github.com/busragunees/FMSS-Bilisim-iOS-Swift-Bootcamp-Bitirme-Projesi/blob/main/screenshots/search-hotels.png?raw=true" width="200" />
 <img
-    
-src="https://github.com/busragunees/FMSS-Bilisim-iOS-Swift-Bootcamp-Bitirme-Projesi/blob/main/screenshots/detail-rmv.png?raw=true" width="200" /> <img 
-src="https://github.com/busragunees/FMSS-Bilisim-iOS-Swift-Bootcamp-Bitirme-Projesi/blob/main/screenshots/detail.png?raw=true" width="200" /> <img 
-/>
+    src="https://github.com/busragunees/FMSS-Bilisim-iOS-Swift-Bootcamp-Bitirme-Projesi/blob/main/screenshots/wrong-data-search.png?raw=true" width="200" />
+<img
+    src="https://github.com/busragunees/FMSS-Bilisim-iOS-Swift-Bootcamp-Bitirme-Projesi/blob/main/screenshots/detail-rmv.png?raw=true" width="200" />
+<img
+    src="https://github.com/busragunees/FMSS-Bilisim-iOS-Swift-Bootcamp-Bitirme-Projesi/blob/main/screenshots/detail.png?raw=true" width="200" /> 
 
 
 ## Tools
