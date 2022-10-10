@@ -10,10 +10,10 @@
 - You can download and run the project
 
 #### Screens
-<img src="https://github.com/FMSS-IOS-Patika-Bootcamp/homework-3-berkayyalcn21/blob/main/images/welcome.png" width="200" /> <img 
-src="https://github.com/FMSS-IOS-Patika-Bootcamp/homework-3-berkayyalcn21/blob/main/images/firstPage.png" width="200" /> <img 
-src="https://github.com/FMSS-IOS-Patika-Bootcamp/homework-3-berkayyalcn21/blob/main/images/home.png" width="200" /> <img 
-src="https://github.com/FMSS-IOS-Patika-Bootcamp/homework-3-berkayyalcn21/blob/main/images/homeColor.png" width="200" /> 
+<img src="" width="200" /> <img 
+src="https://github.com/busragunees/FMSS-Bilisim-iOS-Swift-Bootcamp-Bitirme-Projesi/blob/main/screenshots/home.png?raw=true" width="200" /> <img 
+src="https://github.com/busragunees/FMSS-Bilisim-iOS-Swift-Bootcamp-Bitirme-Projesi/blob/main/screenshots/search-empty.png?raw=true" width="200" /> <img 
+src="" width="200" /> 
 
 <img src="https://github.com/FMSS-IOS-Patika-Bootcamp/homework-3-berkayyalcn21/blob/main/images/home-2.png" width="200" /> <img 
 src="https://github.com/FMSS-IOS-Patika-Bootcamp/homework-3-berkayyalcn21/blob/main/images/todos.png" width="200" /> <img
