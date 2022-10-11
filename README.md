@@ -45,7 +45,11 @@
   - Navigation Controller
   
 #### Network
-  - Api : APİler gelecek.
+  - Api : 
+  https://busra-travely-api.herokuapp.com/hotels
+  https://busra-travely-api.herokuapp.com/articles
+  https://busra-travely-api.herokuapp.com/flights
+  
   - CoreData
   
 #### Design Pattern Architecture
